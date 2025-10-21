@@ -3,6 +3,7 @@ const input = document.getElementById("input");
 const button = document.getElementById("btn");
 
 function doSomething() {
+  opacity = 0;
   container.innerHTML = "";
 
   let numberOfSquaresPerRow = input.value;
@@ -30,8 +31,16 @@ input.addEventListener("keydown", (e) => {
   }
 });
 
+let opacity = 0;
+
 container.addEventListener("mouseover", function (e) {
   if (e.target.classList.contains("row")) {
-    e.target.classList.add("red");
+    const r = Math.floor(Math.random() * 256); // Random number from 0-255
+    const g = Math.floor(Math.random() * 256); // Random number from 0-255
+    const b = Math.floor(Math.random() * 256); // Random number from 0-255
+
+    e.target.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+    e.target.style.opacity = opacity;
+    opacity += 0.1;
   }
 });

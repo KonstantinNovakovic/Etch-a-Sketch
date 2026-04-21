@@ -2,10 +2,6 @@
 
 A browser-based sketchpad built with vanilla JavaScript. One of the projects from [The Odin Project](https://www.theodinproject.com/) curriculum.
 
-## Live Demo
-
-[Add your GitHub Pages link here]
-
 ## About
 
 Click and drag across the grid to draw, just like an Etch-a-Sketch toy. The grid size is adjustable — the more cells, the finer the resolution.
